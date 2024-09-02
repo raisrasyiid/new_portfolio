@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>rais rasyiid</title>
+  <link rel="icon" type="image/png" href="img/logo.png" />
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <!-- my style -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- bootstrap icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <!-- sweetalert -->
+  <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.3/dist/sweetalert2.min.css" rel="stylesheet" />
+
+  <!-- aos animasi -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- loader -->
+  <div class="loader-wrapper">
+    <div class="loader-container">
+      <div class="loader">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <div class="loader-container">
+      <div class="loader">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand me-auto" href="#">rais rasyiid.</a>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">rais rasyiid.</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2 active" aria-current="page" href="#hero">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <a class="navbar-brand" href="https://www.linkedin.com/in/ahmadalmachzumi-rr/" target="_blank">
+        <i class="bi bi-linkedin fs-3"></i>
+      </a>
+      <a class="navbar-brand" href="https://github.com/raisrasyiid" target="_blank"><i
+          class="bi bi-github fs-3"></i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- hero -->
+  <section style="
+        background: linear-gradient(
+          to top,
+          #ffffff 0%,
+          #c3cfe2 30%,
+          #ffffff 100%
+        );
+      ">
+    <div class="container" id="hero">
+      <div class="hero-row row flex-lg-row-reverse d-flex align-items-center">
+        <div class="foto col-sm-12 col-lg-6" data-aos="zoom-in" data-aos-delay="1000">
+          <span class="blob">
+          </span>
+          <div class="foto-container">
+            <img src="img/aku.png" class="d-block mx-lg-auto img-fluid foto-img" alt="Bootstrap Themes" width="500"
+              loading="lazy" />
+          </div>
+        </div>
+        <div class="hero-col col-lg-6">
+          <div class="hero-text">
+            <p class="hero-greetings" data-aos="fade-down" data-aos-delay="1000">
+              Hello Everyone 👋
+            </p>
+            <h2 class="hero-nama" data-aos="fade-down" data-aos-delay="1050">
+              AHMAD ALMACHZUMI RAIS RASYIID
+            </h2>
+            <p class="hero-job text-secondary" data-aos="fade-down" data-aos-delay="1100">
+              Backend Developer | System Analyst | Database Administrator | Quality Assurance | IT Project Manager
+            </p>
+          </div>
+          <div class="hero-button" data-aos="fade-down" data-aos-delay="1150">
+            <a href="https://wa.me/+6281802326693" class="btn btn-dark px-4 py-2" target="_blank">Hubungi saya</a>
+            <a href="#projects" class="hero-portofolio btn border-dark px-4 py-2 ms-2">Portofolio saya</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- about -->
+  <section class="container" id="about" data-aos="fade-down">
+    <h2 class="text-center about-title">About Me</h2>
+    <div class="about-row row">
+      <div class="about-col col-sm-12 col-md-12 col-lg-5 col-xl-5">
+        <img src="img/me.jpg" class="img-about img-thumbnail img-fluid foto-img" style="border-radius: 10%;"
+          width="450px" alt="" />
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-7 col-xl-7 mt-4">
+        <h2 class="about-h2" style="font-family: Montserrat">Who Am I?</h2>
+        <p class="about-p fs-5 mt-3" style="font-family: Georgia, 'Times New Roman', Times, serif">
+          Mahasiswa tingkat Akhir jurusan Sistem Informasi(SI) di Universitas
+          Amikom Yogyakarta. Saya mampu bekerja secara berkolaborasi dengan tim maupun individu, dapat bekerja dengan
+          cepat dan tepat, serta update terhadap perkembangan teknologi informasi. Saya memiliki passion dan
+          dedikasi tinggi dalam bidang pengembangan dan sistem pada website. Dengan analisis dan
+          keterampilan teknis dalam pemrograman serta memiliki keahlian dalam
+          berbagai framework, saya siap menciptakan
+          inovasi webiste yang tidak hanya bagus ditampilan saja akan tetapi fungsionalitasnya sesuai dengan alur
+          bisnis yang dibutuhkan oleh klien. Saya akan
+          bersemangat untuk terus belajar dan berkontribusi dalam dunia teknologi utamanya dibidang pengembangan
+          website.
+        </p>
+        <!-- <hr class="about-hr my-4" /> -->
+        <!-- <div class="row">
+          <div class="row-col col-sm-12 col-lg-6">
+            <p class="mb-1"><b>Nama</b> Ahmad Almaczhumi Rais Rasyiid</p>
+            <p class="row-p"><b>Umur</b> 21 Tahun</p>
+          </div>
+          <div class="row-col col-sm-12 col-lg-6">
+            <p class="mb-1"><b>Asal</b> Yogyakarta</p>
+            <p><b>Email</b> raisrasyiid01@gmail.com</p>
+          </div>
+        </div> -->
+        <div class="about-a">
+          <a class="btn btn-dark mt-2 px-4 py-2" onclick="PrintPDF()" target="_blank"> Download My Resume</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- experience -->
+  <section class="container" id="experience" data-aos="fade-down">
+    <h2 class="text-center about-title">Experience</h2>
+    <div class="timeline row">
+      <ul>
+        <li>
+          <div class="content left">
+            <time><b>Feb 2023 - Feb 2024</b></time>
+            <h6><a href="https://forumasisten.or.id/" class="text-decoration-none" style="color: inherit;">Forum Asisten
+                - Asisten Praktikum</a></h6>
+            <p> Menyiapkan ruangan laboratorium, membantu dosen dalam memberikan penjelasan materi praktikum secara
+              lebih detail, memberikan
+              solusi atas masalah yang sering muncul pada kode program mahasiswa (debugging), mengawasi jalannya
+              praktikum dan memastikan
+              mahasiswa tetap fokus pada pekerjaan</p>
+          </div>
+        </li>
+        <li>
+          <div class="content right">
+            <time><b>Aug 2023 - Dec 2023</b></time>
+            <h6><a href="https://www.infinitelearning.id/" class="text-decoration-none" style="color: inherit;">Infite
+                Learning - Studi Independen </a></h6>
+            <p> Berpengalaman sebagai Project Manager dalam mengelola 3 proyek sekaligus, mulai dari tahap perencanaan
+              hingga penyelesaian.
+              Mahir dalam menyusun timeline proyek, memoderasi tim, dan memastikan komunikasi efektif. Memiliki
+              kemampuan teknis dalam
+              pengembangan website, mulai dari konsep hingga implementasi, serta siap terjun langsung membantu tim dalam
+              mengatasi kendala
+              teknis</p>
+          </div>
+        </li>
+        <li>
+          <div class="content left">
+            <time><b>Feb 2024 - Jun 2024</b></time>
+            <h6><a href="https://lldikti5.id" class="text-decoration-none" style="color: inherit;">LLDIKTI V - Magang
+              </a></h6>
+            <p> Bertanggung jawab sebagai analis sistem dan database administrator, berpengalaman dengan kemampuan kuat
+              dalam merancang dan
+              mengoptimalkan sistem informasi. Mampu mengidentifikasi kebutuhan pengguna, memodelkan proses bisnis, dan
+              merancang diagram
+              alur data. Memiliki keahlian dalam mengelola dan mengoptimalkan database, termasuk perancangan ERD,
+              optimasi query, dan ekstraksi
+              data berskala besar. Saya juga berkontribusi dalam pengembangan aplikasi menggunakan berbasis website dan
+              mobile apps.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- projects -->
+  <section class="container" id="projects" data-aos="fade-down">
+    <h2 class="text-center projects-title">My Projects</h2>
+    <!-- card -->
+    <div class="projek-card row" style="padding-left: 7.5rem; padding-right: 7.5rem">
+      <div class="projek-col col-sm-12 col-md-12 col-lg-6 col-xl-4" data-aos="flip-left">
+        <div class="card" style="width: 20rem">
+          <img src="img/evira.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Evira Mobile</h5>
+            <div class="mb-2">
+              <span class="badge rounded-pill text-bg-secondary">Kotlin</span>
+              <span class="badge rounded-pill text-bg-secondary">Express Js</span>
+              <span class="badge rounded-pill text-bg-secondary">API</span>
+            </div>
+            <p class="card-text">
+              Pengembangan aplikasi mobile berbasis microservice. Digunakan untuk sistem analisa data Perguruan Tinggi
+              yang ada di Yogyakarta.
+            </p>
+            <div class="pt-2">
+              <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modal1">Detail</a>
+              <a href="#" target="_blank" class="btn border-dark border-1" id="btn-preview">Preview</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="projek-col col-sm-12 col-md-12 col-lg-6 col-xl-4" data-aos="flip-left">
+        <div class="card" style="width: 20rem">
+          <img src="img/janaka.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Janaka</h5>
+            <div class="mb-2">
+              <span class="badge rounded-pill text-bg-secondary">Laravel</span>
+              <span class="badge rounded-pill text-bg-secondary">Tailwind</span>
+              <span class="badge rounded-pill text-bg-secondary">MySql</span>
+            </div>
+            <p class="card-text">
+              Sistem Informasi Legalisasi Ijazah dan Surat Keterangan Pengganti Ijazah Mahasiswa Berbasis Website di
+              Wilayah Yogyakarta.
+            </p>
+            <div class="pt-2">
+              <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modal2">Detail</a>
+              <a href="https://janaka.lldikti5.id/" target="_blank" class="btn border-dark border-1"
+                id="btn-preview">Preview</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="projek-col col-sm-12 col-md-12 col-lg-6 col-xl-4" data-aos="flip-left">
+        <div class="card" style="width: 20rem">
+          <img src="img/nakula.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Nakula</h5>
+            <div class="mb-2">
+              <span class="badge rounded-pill text-bg-secondary">Laravel</span>
+              <span class="badge rounded-pill text-bg-secondary">Bootstrap</span>
+              <span class="badge rounded-pill text-bg-secondary">MySql</span>
+            </div>
+            <p class="card-text">
+              Sistem Informasi berbasis website yang digunakan untuk meningkatkan
+              mutu penyelenggaraan pendidikan tinggi di wilayah Yogyakarta.
+            </p>
+            <div class="pt-2">
+              <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modal3">Detail</a>
+              <a href="https://nakula.lldikti5.id/" target="_blank" class="btn border-dark border-1"
+                id="btn-preview">Preview</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- hidden projek -->
+    <div id="collapseExample" class="collapse">
+      <div class="projek-card row" style="padding-left: 7.5rem; padding-right: 7.5rem">
+        <div class="projek-col col-sm-12 col-md-12 col-lg-6 col-xl-4">
+          <div class="card" style="width: 20rem">
+            <img src="img/sengkuni.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Sengkuni</h5>
+              <div class="mb-2">
+                <span class="badge rounded-pill text-bg-secondary">Next Js</span>
+                <span class="badge rounded-pill text-bg-secondary">Tailwind</span>
+                <span class="badge rounded-pill text-bg-secondary">PostgreSql</span>
+              </div>
+              <p class="card-text">
+                Sistem Informasi pengelolaan dan integrasi data perguruan tinggi di wilayah Yogyakarta.
+              </p>
+              <div class="pt-2">
+                <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modal4">Detail</a>
+                <a href="https://sengkuni.lldikti5.id/" target="_blank" class="btn border-dark border-1"
+                  id="btn-preview">Preview</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="projek-col col-sm-12 col-md-12 col-lg-6 col-xl-4">
+          <div class="card" style="width: 20rem">
+            <img src="img/cervicare.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Cervicare</h5>
+              <div class="mb-2">
+                <span class="badge rounded-pill text-bg-secondary">React Js</span>
+                <span class="badge rounded-pill text-bg-secondary">Express Js</span>
+                <span class="badge rounded-pill text-bg-secondary">MySql</span>
+              </div>
+              <p class="card-text">
+                platform yang menyediakan jasa konsultasi online dengan dokter spesialis untuk layanan kesehatan
+                yang menjalankan program vaksinasi HPV.
+              </p>
+              <div class="pt-2">
+                <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modal4">Detail</a>
+                <a href="#" target="_blank" class="btn border-dark border-1" id="btn-preview">Preview</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="projek-col col-sm-12 col-md-12 col-lg-6 col-xl-4">
+          <div class="card" style="width: 20rem">
+            <img src="img/lokatrendy.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Lokatrendy</h5>
+              <div class="mb-2">
+                <span class="badge rounded-pill text-bg-secondary">Html</span>
+                <span class="badge rounded-pill text-bg-secondary">Bootstrap</span>
+              </div>
+              <p class="card-text">
+                Sebuah web e-commerce yang dibuat untuk membantu memperluas area penjualan para pemilik bisnis kaos
+                custom.
+              </p>
+              <div class="pt-2">
+                <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modal4">Detail</a>
+                <a href="#" target="_blank" class="btn border-dark border-1" id="btn-preview">Preview</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="projek-col col-sm-12 col-md-12 col-lg-6 col-xl-4">
+          <div class="card" style="width: 20rem">
+            <img src="img/sidigdes1.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Sidigdes</h5>
+              <div class="mb-2">
+                <span class="badge rounded-pill text-bg-secondary">CodeIgniter</span>
+                <span class="badge rounded-pill text-bg-secondary">Bootstrap</span>
+                <span class="badge rounded-pill text-bg-secondary">MySql</span>
+              </div>
+              <p class="card-text">
+                Sebuah sistem informasi berbasis website untuk mengelola data desa dengan sistem multi-tenancy.
+              </p>
+              <div class="pt-2">
+                <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modal4">Detail</a>
+                <a href="https://sidesa-payment.my.id/sidesa-payment/" target="_blank" class="btn border-dark border-1"
+                  id="btn-preview">Preview</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="projek-col col-sm-12 col-md-12 col-lg-6 col-xl-4">
+          <div class="card" style="width: 20rem">
+            <img src="img/bengkel.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Sistem Reservasi Bengkel</h5>
+              <div class="mb-2">
+                <span class="badge rounded-pill text-bg-secondary">CodeIgniter</span>
+                <span class="badge rounded-pill text-bg-secondary">Bootstrap</span>
+                <span class="badge rounded-pill text-bg-secondary">MySql</span>
+              </div>
+              <p class="card-text">
+                Sistem informasi Reservasi bengkel berbasis website guna memudahkan klien dalam mengatur customernya.
+              </p>
+              <div class="pt-2">
+                <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modal5">Detail</a>
+                <a class="btn border-dark border-1" id="btn-preview" onclick="sweetalert()">Preview</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="projek-col col-sm-12 col-md-12 col-lg-6 col-xl-4">
+          <div class="card" style="width: 20rem">
+            <img src="img/barber.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Sistem Reservasi Barbershop</h5>
+              <div class="mb-2">
+                <span class="badge rounded-pill text-bg-secondary">CodeIgniter</span>
+                <span class="badge rounded-pill text-bg-secondary">Bootstrap</span>
+                <span class="badge rounded-pill text-bg-secondary">MySql</span>
+              </div>
+              <p class="card-text">
+                Sistem informasi Reservasi Barbershop berbasis website guna memudahkan klien dalam mengatur customernya.
+              </p>
+              <div class="pt-2">
+                <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modal6">Detail</a>
+                <a class="btn border-dark border-1" id="btn-preview" onclick="sweetalert()">Preview</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- tombol view all projects -->
+    <div class="projek-button text-center mt-5">
+      <button class="btn btn-dark px-4 py-2" data-bs-toggle="collapse" href="#collapseExample" role="button"
+        aria-expanded="false" aria-controls="collapseExample">
+        View all projects <i class="bi bi-arrow-right-circle"></i>
+      </button>
+    </div>
+
+    <!-- modal 1 -->
+    <div class="modal fade" id="modal1" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="cover">
+            <img src="img/evira.png" alt="cover" style="margin-top: -300px;" />
+          </div>
+          <div class="icon">
+            <i class="bi bi-phone-fill text-secondary"></i>
+          </div>
+          <div class="modal-body mt-4 pb-5">
+            <h1 class="modal-title fs-1">Evira Mobile</h1>
+            <span class="badge rounded-pill text-bg-secondary">Kotlin</span>
+            <span class="badge rounded-pill text-bg-secondary">Express js</span>
+            <span class="badge rounded-pill text-bg-secondary">API</span>
+            <!-- content -->
+            <div class="content mt-5">
+              <div class="row">
+                <div class="col-sm-12 col-lg-3">
+                  <div class="modal-label bi bi-justify-left text-secondary">
+                    Project Overview
+                  </div>
+                </div>
+                <div class="col-sm-12 col-lg-9">
+                  <p class="modal-p">
+                    Pengembangan aplikasi mobile berbasis microservice. Digunakan untuk sistem analisa data Perguruan
+                    Tinggi
+                    yang ada di Yogyakarta.
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 col-lg-3">
+                  <div class="modal-label bi bi-caret-down-square text-secondary">
+                    Category
+                  </div>
+                </div>
+                <div class="col-sm-12 col-lg-9">
+                  <p class="modal-p">Moblie Apps</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 col-lg-3">
+                  <div class="modal-label bi bi-list-ul text-secondary">
+                    My Role
+                  </div>
+                </div>
+                <div class="col-sm-12 col-lg-9">
+                  <p class="modal-p">Database Administrator</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 col-lg-3">
+                  <div class="modal-label bi bi-justify-left text-secondary">
+                    Link Website
+                  </div>
+                </div>
+                <div class="col-sm-12 col-lg-9">
+                  <a href="#" class="modal-p text-secondary">evira_mobile</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal 2 -->
+    <div class="modal fade" id="modal2" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="cover">
+            <img src="img/janaka.png" alt="cover" style="margin-top: -300px;" />
+          </div>
+          <div class="icon">
+            <i class="bi bi-laptop-fill text-success"></i>
+          </div>
+          <div class="modal-body mt-4 pb-5">
+            <h1 class="modal-title fs-1">Janaka</h1>
+            <span class="badge rounded-pill text-bg-secondary">Laravel</span>
+            <span class="badge rounded-pill text-bg-secondary">Tailwind</span>
+            <span class="badge rounded-pill text-bg-secondary">MySql</span>
+            <!-- content -->
+            <div class="content mt-5">
+              <div class="row">
+                <div class="col-sm-12 col-lg-3">
+                  <div class="modal-label bi bi-justify-left text-secondary">
+                    Project Overview
+                  </div>
+                </div>
+                <div class="col-sm-12 col-lg-9">
+                  <p class="modal-p">
+                    testing janaka
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 col-lg-3">
+                  <div class="modal-label bi bi-caret-down-square text-secondary">
+                    Category
+                  </div>
+                </div>
+                <div class="col-sm-12 col-lg-9">
+                  <p class="modal-p">Web</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 col-lg-3">
+                  <div class="modal-label bi bi-list-ul text-secondary">
+                    My Role
+                  </div>
+                </div>
+                <div class="col-sm-12 col-lg-9">
+                  <p class="modal-p">Database Administrator</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 col-lg-3">
+                  <div class="modal-label bi bi-justify-left text-secondary">
+                    Link Website
+                  </div>
+                </div>
+                <div class="col-sm-12 col-lg-9">
+                  <a href="https://janaka.lldikti5.id/" class="modal-p text-secondary"
+                    target="_blank">https://janaka.lldikti5.id/</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- skills -->
+  <section id="skills" class="py-5" data-aos="fade-down">
+    <div class="container">
+      <h2 class="text-center mb-5 skills-title">My Skills</h2>
+      <div class="row justify-content-center">
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+          <div class="skill-card">
+            <div class="skill-icon html">
+              <i class="fa-brands fa-html5"></i>
+            </div>
+            <h5 class="skill-name">Html</h5>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+          <div class="skill-card">
+            <div class="skill-icon css">
+              <i class="fa-brands fa-css3-alt"></i>
+            </div>
+            <h5 class="skill-name">CSS</h5>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+          <div class="skill-card">
+            <div class="skill-icon javascript">
+              <i class="fa-brands fa-js"></i>
+            </div>
+            <h5 class="skill-name">JavaScript</h5>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+          <div class="skill-card">
+            <div class="skill-icon php">
+              <i class="fab fa-php"></i>
+            </div>
+            <h5 class="skill-name">PHP</h5>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+          <div class="skill-card">
+            <div class="skill-icon kotlin">
+              <i class="">
+                <img src="img/kotlin.svg" alt="kotlin" width="50px">
+              </i>
+            </div>
+            <h5 class="skill-name">Kotlin</h5>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+          <div class="skill-card">
+            <div class="skill-icon laravel">
+              <i class="fab fa-laravel"></i>
+            </div>
+            <h5 class="skill-name">Laravel</h5>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+          <div class="skill-card">
+            <div class="skill-icon Codeigniter">
+              <i class="">
+                <img src="img/codeigniter.svg" alt="codeigniter" width="50px">
+              </i>
+            </div>
+            <h5 class="skill-name">CodeIgniter</h5>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+          <div class="skill-card">
+            <div class="skill-icon api">
+              <i class="">
+                <img src="img/api.svg" alt="api" width="50px">
+              </i>
+            </div>
+            <h5 class="skill-name">API</h5>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+          <div class="skill-card">
+            <div class="skill-icon api">
+              <i class="">
+                <img src="img/expressjs.png" alt="api" width="50px">
+              </i>
+            </div>
+            <h5 class="skill-name">Express Js</h5>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+          <div class="skill-card">
+            <div class="skill-icon api">
+              <i class="">
+                <img src="img/nodejs.png" alt="api" width="50px">
+              </i>
+            </div>
+            <h5 class="skill-name">Node Js</h5>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+          <div class="skill-card">
+            <div class="skill-icon bootstrap">
+              <i class="fab fa-bootstrap"></i>
+            </div>
+            <h5 class="skill-name">Bootstrap</h5>
+          </div>
+        </div>
+        <!-- <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+          <div class="skill-card">
+            <div class="skill-icon tailwind">
+              <i class="">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" style="width: 3rem">
+                  <path
+                    d="M64.004 25.602c-17.067 0-27.73 8.53-32 25.597 6.398-8.531 13.867-11.73 22.398-9.597 4.871 1.214 8.352 4.746 12.207 8.66C72.883 56.629 80.145 64 96.004 64c17.066 0 27.73-8.531 32-25.602-6.399 8.536-13.867 11.735-22.399 9.602-4.87-1.215-8.347-4.746-12.207-8.66-6.27-6.367-13.53-13.738-29.394-13.738zM32.004 64c-17.066 0-27.73 8.531-32 25.602C6.402 81.066 13.87 77.867 22.402 80c4.871 1.215 8.352 4.746 12.207 8.66 6.274 6.367 13.536 13.738 29.395 13.738 17.066 0 27.73-8.53 32-25.597-6.399 8.531-13.867 11.73-22.399 9.597-4.87-1.214-8.347-4.746-12.207-8.66C55.128 71.371 47.868 64 32.004 64zm0 0"
+                    fill="#38bdf8" />
+                </svg>
+              </i>
+            </div>
+            <h5 class="skill-name">Tailwind</h5>
+          </div>
+        </div> -->
+        <!-- <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+          <div class="skill-card">
+            <div class="skill-icon figma">
+              <i class="fab fa-figma"></i>
+            </div>
+            <h5 class="skill-name">Figma</h5>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+          <div class="skill-card">
+            <div class="skill-icon canva">
+              <span class="canva-icon">C</span>
+            </div>
+            <h5 class="skill-name">Canva</h5>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  </section>
+
+  <!-- contact -->
+  <section id="contact" data-aos="fade-down">
+    <div class="container">
+      <h2 class="text-center mb-5 contact-title">Contact</h2>
+      <div class="row justify-content-center">
+        <div class="col-11 col-lg-7">
+          <div class="card card-contact py-5 px-5">
+            <form action="https://formspree.io/f/ahmdrr" method="POST">
+              <div class="mb-3">
+                <label for="">Nama</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+              </div>
+              <div class="mb-3">
+                <label for="">Email</label>
+                <input type="email" class="form-control" id="exampleInputNama1" />
+              </div>
+              <div class="mb-3">
+                <label for="">Pesan</label>
+                <textarea name="pesan" id="pesan" class="form-control"></textarea>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-dark px-3">
+                  Kirim Pesan
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scroll to top -->
+  <div class="button-scroll">
+    <a href="#" class="btn btn-dark fa-solid fa-arrow-up scroll-to-top py-3 px-2" style="display: none"></a>
+  </div>
+
+  <!-- footer -->
+  <footer id="footer" class="text-white" style="background-color: #4b4b4b; padding: 40px 0;">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center mb-3">
+          <h5>Contact Me</h5>
+          <a href="#" target="_blank" class="bi bi-whatsapp mx-2" style="color: #028028; font-size: 24px;"></a>
+          <a href="#" target="_blank" class="bi bi-instagram mx-2" style="color: #fd1d1d; font-size: 24px;"></a>
+          <a href="https://www.linkedin.com/in/ahmadalmachzumi-rr/" target="_blank" class="bi bi-linkedin mx-2"
+            style="color: #0077b5; font-size: 24px;"></a>
+          <a href="https://github.com/raisrasyiid" target="_blank" class="bi bi-github mx-2"
+            style="color: #011940; font-size: 24px;"></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col text-center">
+          <p class="footer-p">
+            Ahmad Almachzumi Rais Rasyiid made by <b class="text-primary"><a href="https://getbootstrap.com/"
+                class="text-decoration-none">Bootstrap</a></b>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- aos animasi -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1500,
+    });
+  </script>
+
+  <!-- firebase database -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-firestore.js"></script>
+
+  <!-- firebase database -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-app.js";
+    import {
+      getFirestore,
+      doc,
+      getDoc,
+      updateDoc,
+      increment,
+      collection,
+      query,
+      where,
+      getDocs,
+      setDoc,
+      deleteDoc,
+    } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-firestore.js";
+    import {
+      getAuth,
+      signInAnonymously,
+      onAuthStateChanged,
+    } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-auth.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyBfTPjZybxTJ1Hp72U4ru0QpRYuTlv0Jqg",
+      authDomain: "fitur-like-portofolio.firebaseapp.com",
+      databaseURL:
+        "https://fitur-like-portofolio-default-rtdb.asia-southeast1.firebasedatabase.app",
+      projectId: "fitur-like-portofolio",
+      storageBucket: "fitur-like-portofolio.appspot.com",
+      messagingSenderId: "352307667051",
+      appId: "1:352307667051:web:600b73767fa356aaab512e",
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+    const auth = getAuth(app);
+
+    const likeButton = document.getElementById("like-button");
+    const likeCount = document.getElementById("like-count");
+
+    const postId = "portofolio-likes";
+    const postRef = doc(db, "posts", postId);
+
+    async function updateLikeCount(user) {
+      try {
+        console.log("Attempting to update like count...");
+        const docSnap = await getDoc(postRef);
+
+        if (docSnap.exists()) {
+          // Cek apakah pengguna sudah memberikan like
+          const likesRef = collection(postRef, "likes");
+          const userLikeQuery = query(
+            likesRef,
+            where("userId", "==", user.uid)
+          );
+          const userLikeSnap = await getDocs(userLikeQuery);
+
+          if (!userLikeSnap.empty) {
+            console.log("User has already liked this post. Removing like...");
+
+            // Hapus like
+            await updateDoc(postRef, {
+              likes: increment(-1),
+            });
+
+            // Hapus informasi pengguna yang memberikan like
+            await deleteDoc(doc(likesRef, user.uid));
+
+            // Ubah ikon tombol menjadi bi-star
+            likeButton.classList.remove("bi-star-fill");
+            likeButton.classList.add("bi-star");
+          } else {
+            console.log("User has not liked this post. Adding like...");
+
+            // Tambahkan jumlah like
+            await updateDoc(postRef, {
+              likes: increment(1),
+            });
+
+            // Simpan informasi pengguna yang memberikan like
+            await setDoc(doc(likesRef, user.uid), {
+              userId: user.uid,
+              timestamp: new Date(),
+            });
+
+            // Ubah ikon tombol menjadi bi-star-fill
+            likeButton.classList.remove("bi-star");
+            likeButton.classList.add("bi-star-fill");
+          }
+
+          // Menampilkan jumlah like yang diperbarui
+          const updatedDocSnap = await getDoc(postRef);
+          const updatedData = updatedDocSnap.data();
+          likeCount.textContent = `Star ${updatedData.likes}`;
+        } else {
+          console.log("Dokumen tidak ditemukan!");
+        }
+      } catch (error) {
+        console.error("Error saat memperbarui jumlah like: ", error);
+      }
+    }
+
+    async function initializeLikeCount() {
+      try {
+        console.log("Initializing like count...");
+        const docSnap = await getDoc(postRef);
+
+        if (docSnap.exists()) {
+          const data = docSnap.data();
+          likeCount.textContent = `Star ${data.likes || 0}`;
+        } else {
+          console.log("Dokumen tidak ditemukan saat inisialisasi!");
+        }
+      } catch (error) {
+        console.error("Error saat mengambil jumlah like: ", error);
+      }
+    }
+
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        likeButton.addEventListener("click", () => updateLikeCount(user));
+      } else {
+        signInAnonymously(auth)
+          .then(() => {
+            console.log("Signed in anonymously");
+          })
+          .catch((error) => {
+            console.error("Error signing in anonymously: ", error);
+          });
+      }
+    });
+
+    initializeLikeCount();
+  </script>
+
+  <!-- myjs -->
+  <script src="script.js"></script>
+  <!-- sweetalert -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.3/dist/sweetalert2.all.min.js"></script>
+
+  <!-- Print PDF -->
+  <script>
+    function PrintPDF() {
+      window.open("file/resume.pdf");
+    }
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
